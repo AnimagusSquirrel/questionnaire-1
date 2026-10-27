@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How old do you feel?</title>
+  <meta name="description" content="A short questionnaire about the decades of your life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;800&family=Fraunces:opsz,wght@9..144,800;9..144,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E8C5C2'/%3E%3Ccircle cx='16' cy='14' r='7' fill='%236B3A22' stroke='%231A1008' stroke-width='2'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="app">
+    <main class="panel">
+      <div class="stage" id="stage"></div>
+
+      <nav class="nav" aria-label="Questionnaire navigation">
+        <button type="button" class="navbtn" id="nav-back" aria-label="Previous question">&larr; Back</button>
+        <div class="progress">
+          <div class="dots" id="dots" aria-hidden="true"></div>
+          <span class="count" id="count"></span>
+          <span class="nav-msg" id="nav-msg" role="status"></span>
+        </div>
+        <button type="button" class="navbtn primary" id="nav-next">Next</button>
+      </nav>
+    </main>
+    <p class="keys" aria-hidden="true">Use the arrow keys to move between questions</p>
+  </div>
+
+  <pre id="debug" hidden></pre>
+
+  <script src="js/config.js"></script>
+  <script src="js/questions.js"></script>
+  <script src="js/illustration.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
